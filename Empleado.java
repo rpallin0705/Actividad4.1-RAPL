@@ -1,5 +1,12 @@
 package ies;
 
+/**
+ * Clase Empleado que define atributos y métodos para guardar y gestionar la
+ * información personal de los empleados de una empresa
+ * @author Rafael Álvaro Palomares Linares
+ * @version 1.0
+ * since version 1.0
+ */
 public class Empleado {
 	private int emp_no;
 	private String nombre;
@@ -9,6 +16,16 @@ public class Empleado {
 	private Double salario;
 	private Departamento dept;
 
+    /**
+     * Constructor de la clase empleado
+     * @param emp_no Numero del empleado
+     * @param nombre Nombre del empleado
+     * @param apellido Apellido del empleado
+     * @param pobla Población en la que reside el empleado
+     * @param oficio Puesto que desempenha el empleado en la empresa
+     * @param salario Salario mensual del empleado
+     * @param dept Departamento al que pertenece el empleado
+     */
 	public Empleado(int emp_no, String nombre, String apellido, String pobla, String oficio,
 			Double salario, Departamento dept) {
 		this.emp_no = emp_no;
@@ -19,7 +36,18 @@ public class Empleado {
 		this.salario = salario;
 		this.dept = dept;
 	}
-	
+
+    /**
+     * Segundo Constructor de la clase empleado
+     * @author Rafael Álvaro Palomares Linares RAPL
+     * @param emp_no Numero del empleado
+     * @param nombre nombre Nombre del empleado
+     * @param salario Salario mensual del empleado
+     * @param dept Departamento al que pertenece el empleado
+     * @deprecated Este método se eliminará en la proxima versión del programa
+     * @version 0.5
+     * @since 0.5
+     */
 	public Empleado(int emp_no, String nombre, Double salario, Departamento dept) {
 		this.emp_no = emp_no;
 		this.nombre = nombre;
