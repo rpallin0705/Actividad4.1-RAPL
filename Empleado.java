@@ -55,55 +55,126 @@ public class Empleado {
 		this.dept = dept;
 	}
 
+	/**
+	 * Método get del atributo emp_no (numero de empleado)
+	 * @return Valor entero emp_no
+	 * @version 0.5
+	 * @since 0.5
+	 */
 	public int getEmp_no() {
 		return emp_no;
 	}
 
+	/**
+	 * Metodo set del atributo emp_no (numero de empleado)
+	 * @param emp_no Numero del empleado
+	 * @version 1.0
+	 * @since 0.5
+	 */
 	public void setEmp_no(int emp_no) {
 		this.emp_no = emp_no;
 	}
 
+	/**
+	 * Método get del atributo nombre (nombre del empleado)
+	 * @return Valor String del atributo nombre
+	 * @version 0.5
+	 * @since 0.5
+	 */
 	public String getNombre() {
 		return nombre;
 	}
 
+	/**
+	 * Método set del atributo apellido (apellido del empleado)
+	 * @param nombre Nombre del empleado
+	 * @version 0.5
+	 * @since 0.5
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
+	/**
+     * Método get del atributo pobla (poblacion del empleado)
+     * @return Valor String del atributo pobla
+	 * @version 1.0
+	 * @since 0.5
+     */
 	public String getPobla() {
 		return pobla;
 	}
 
+	/**
+     * Método set del atributo pobla (poblacion del empleado)
+     * @param pobla Población en la que reside el empleado
+	 * @version 1.0
+	 * @since 0.5
+     */
 	public void setPobla(String pobla) {
 		this.pobla = pobla;
 	}
 
+	/**
+     * Método get del atributo oficio (puesto que desempenha el empleado en la empresa)
+     * @return Valor String del atributo oficio
+	 * @version 1.0
+	 * @since 0.5
+     */
 	public String getOficio() {
 		return oficio;
 	}
 
+	/**
+     * Método set del atributo oficio (puesto que desempenha el empleado en la empresa)
+     * @param oficio Puesto que desempenha el empleado en la empresa
+	 * @version 1.0
+	 * @since 0.5
+     */
 	public void setOficio(String oficio) {
 		this.oficio = oficio;
 	}
 
+	/**
+	 * Metodo get del atributo salario (salario del empleado)
+	 * @return Valor Double del atributo salario
+	 * @version 0.5
+	 * @since 0.5
+	 */
 	public Double getSalario() {
 		return salario;
 	}
 
+	/**
+     * Metodo set del atributo salario (salario del empleado)
+     * @param salario Salario mensual del empleado
+	 * @version 1.0
+	 * @since 0.5
+     */
 	public void setSalario(Double salario) {
 		this.salario = salario;
 	}
-	
-	
+
+	/**
+     * Metodo get del atributo dept (departamento al que pertenece el empleado)
+     * @return Valor Departamento del atributo dept
+	 * @version 0.5
+	 * @since 0.5
+     */
 	public Departamento getDept() {
 		return dept;
 	}
 
+	/**
+     * Metodo set del atributo dept (departamento al que pertenece el empleado)
+     * @param dept Departamento al que pertenece el empleado
+	 * @version 1.0
+	 * @since 0.5
+     */
 	public void setDept(Departamento dept) {
 		this.dept = dept;
 	}
-	
+
 	public void subidasalario(Double subida) {
 		salario = salario + subida;
 	}
