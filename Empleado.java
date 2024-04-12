@@ -15,7 +15,7 @@ public class Empleado {
 	private String pobla;
 	private String oficio;
 	private Double salario;
-	private Departamento dept;
+	private String dept;
 
 	/**
 	 * Constructor de la clase empleado
@@ -29,7 +29,7 @@ public class Empleado {
 	 * @param dept     Departamento al que pertenece el empleado
 	 */
 	public Empleado(int emp_no, String nombre, String apellido, String pobla, String oficio,
-			Double salario, Departamento dept) {
+			Double salario, String dept) {
 		this.emp_no = emp_no;
 		this.nombre = nombre;
 		this.apellido = apellido;
@@ -51,7 +51,7 @@ public class Empleado {
 	 * @version 0.5
 	 * @since 0.5
 	 */
-	public Empleado(int emp_no, String nombre, Double salario, Departamento dept) {
+	public Empleado(int emp_no, String nombre, Double salario, String dept) {
 		this.emp_no = emp_no;
 		this.nombre = nombre;
 		this.salario = salario;
@@ -177,7 +177,7 @@ public class Empleado {
 	 * @version 0.5
 	 * @since 0.5
 	 */
-	public Departamento getDept() {
+	public String getDept() {
 		return dept;
 	}
 
@@ -188,7 +188,7 @@ public class Empleado {
 	 * @version 1.0
 	 * @since 0.5
 	 */
-	public void setDept(Departamento dept) {
+	public void setDept(String dept) {
 		this.dept = dept;
 	}
 
@@ -200,13 +200,12 @@ public class Empleado {
 	 * @throws IllegalArgumentException El salario que se va a sumar al antiguo salario no puede ser negativo
 	 */
 	public void subidasalario(Double subida) throws IllegalArgumentException{
-		if (subida <= 0 ) throw new IllegalArgumentException;
+		if (subida <= 0 ) throw new IllegalArgumentException("El valor de subida no puede ser negativo");
 		else salario = salario + subida;
 	}
 
 	/**
 	 * Metodo para comprobar el nombre de un empleado está vacío en la base de datos
-	 * 
 	 * @return boolean que verifica si el nombre del empleado está o no almacenado
 	 * @author Rafael Alvaro Palomares Linares RAPL
 	 * @version 1.1
